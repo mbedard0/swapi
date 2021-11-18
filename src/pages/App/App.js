@@ -4,13 +4,15 @@ import NavBar from '../../components/NavBar'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
-  const [navTitle, setNavTitle] = useState({
-    url: '/', name: 'Star Wars Starships'
-  })
+  const [navTitle, setNavTitle] = useState([{
+    url: "/", name: "Star Wars Starships"
+  }])
 
   return (
     <div className="App">
       <NavBar navTitle={navTitle}/>
+      <Routes>
+      </Routes>
     </div>
   );
 }
