@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import NavBar from '../../components/NavBar'
 import { Routes, Route } from 'react-router-dom'
 import Starships from '../Starships/Starships';
+import StarshipPage from '../../StarshipPage/StarshipPage';
 
 function App() {
   const [navTitle, setNavTitle] = useState([{
@@ -14,6 +15,7 @@ function App() {
       <NavBar navTitle={navTitle}/>
       <Routes>
         <Route path="/" element={<Starships />} />
+        <Route path="/starship/:idx" element={<StarshipPage />} />
       </Routes>
     </div>
   );
