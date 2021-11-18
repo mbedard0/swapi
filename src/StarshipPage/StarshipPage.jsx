@@ -13,10 +13,15 @@ const StarshipPage = (props) => {
 
   return (  
     <>
+      {starshipDetails.length ?
       <div>
         <h1>{starshipDetails.name}</h1>
         <h3>{starshipDetails.model}</h3>
+        <p><a href="/">Return to Starship List</a></p>
       </div>
+      :
+      <p>Loading....</p>
+      }
     </>
   );
 }

@@ -1,0 +1,11 @@
+.navBar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+a:link, a:visited {
+  color:gray;
+  text-decoration: none;
+}

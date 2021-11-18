@@ -12,7 +12,8 @@ const Starships = (props) => {
 
   return (  
     <>
-      <div>
+      {starships.length ? 
+      <div class="starship-cards">
         {starships.map((starship, idx) =>
           <Link 
             to={{pathname: `/starship/${idx}` }}
@@ -22,6 +23,9 @@ const Starships = (props) => {
           </Link>
         )}
       </div>
+      :
+      <p>Loading....</p>
+      }
     </>
   );
 }
